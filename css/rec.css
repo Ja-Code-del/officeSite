@@ -220,6 +220,10 @@ main{
     margin: 10px;
     background-color:#46444a;
    }
+   .divider{
+    border-bottom: 1px gray solid;
+    margin: 4px 0 12px 0;
+   }
    #info h1{
     font-size: 2em;
    }
