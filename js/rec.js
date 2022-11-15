@@ -6,11 +6,14 @@ window.onload = function(){
   menu.addEventListener('click', () => {
       lienMenu.classList.toggle('mobile-menu')
   }); 
+
+
 /*this is to change the page mode dark or light*/
   let mode = document.getElementById('bouton')
   let change = document.getElementById('theme')
   let footColor = document.getElementsByTagName('footer')
   let sousTitre = document.getElementsByClassName('modeSoustitre')
+  let underline = document.getElementsByClassName('underlined')
   let test = true
   mode.addEventListener('click', () => {
       if(test){
@@ -19,6 +22,9 @@ window.onload = function(){
       for(let i=0; i<sousTitre.length;i++){
       sousTitre[i].style.backgroundColor='antiquewhite';
       }
+      for(let j = 0; j < underline.length; j++){
+        underline[j].style.color = 'teal'
+      }
       footColor[0].style.color = 'white'
       test = false
   } else {
@@ -26,6 +32,9 @@ window.onload = function(){
       change.style.color = 'white'
       for(let i=0; i<sousTitre.length;i++){
         sousTitre[i].style.backgroundColor='#44464a';
+        }
+        for(let j = 0; j < underline.length; j++){
+          underline[j].style.color = '#f69d3c'
         }
       test= true
   }
@@ -44,15 +53,15 @@ window.onload = function(){
   }
   
 
- for(let i=0; i < choixLien.length; i++){
+ for(let i = 0; i < choixLien.length; i++){
     choixLien[i].addEventListener('click', () => {
       enleverAffichage();
       choixArticle[i].classList.add('affiche');  // this add the class affiche to the article choosed
     });
  } 
- console.log(choixLien[5])
+ 
 
-/* THE IMAGE SLIDER*/
+/* THE SLIDER*/
 
  let img_slider = document.getElementsByClassName('img__slider')
  let etape = 0;
@@ -83,7 +92,6 @@ window.onload = function(){
   removeActive();
   img_slider[etape].classList.add('active');
  });
-console.log(img_slider);
 
 setInterval(() => {
   etape++;
