@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accident | Bureau Rec-Chan</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="css/accident.css">
+   <script src="https://kit.fontawesome.com/6c15a318d4.js" crossorigin="anonymous"></script>
+  <!-- This line removes any default padding and style.
+       You might only need one of these values set. -->
+  <style> 
+ </style>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.2/p5.js"></script>
+  <!-- <script src="../addons/p5.sound.js"></script> -->
+</head>
+                      <!--S T A R T  B O D Y-->
+
+  <body>
+
+  <nav class="navi">
+    <a href="accueil.html" class="logo">  BUREAU <br> RECRUTEMENT <br> CHANCELLERIE</a>
+    <div class="menu-lien">
+      <ul>
+        <li><a href="accueil.html">ACCUEIL</a></li>
+        <li><a href="recrutement.html"> SECTION RECRUTEMENT </a></li>
+        <li><a href="chan.html"> SECTION CHANCELLERIE </a></li>
+        <li class="active"><a href="#"> SECTION ACCIDENT </a></li>
+      </ul>
+    </div>
+    <span class="bouton-menu"><i class="fa fa-bars fa-2x" style="color:white;"></i></span>
+  </nav>
+  <header></header>
+<!--
+  <div>
+    <main>
+    </main>
+  </div> -->
+  <div class="sec">
+    <section>
+        <article></article>
+    </section>
+  </div>
+  <footer>
+  <address>
+  Avenue de la Gendarmerie, Abidjan Plateau
+  </address>
+  </footer>
+</body>
+
+<script>
+  const menu = document.querySelector(".bouton-menu")
+  const lienMenu = document.querySelector(".menu-lien")
+  menu.addEventListener("click",()=>{
+    lienMenu.classList.toggle('mobile-menu')
+  })
+</script>
+</html> 

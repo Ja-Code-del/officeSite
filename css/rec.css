@@ -1,0 +1,338 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Poppins',sans-serif;
+  color: whitesmoke;
+  font-weight: bold;
+  background-color: #121212;
+  width: 100%;
+  height:100vh;
+  box-sizing: border-box;
+  display: grid; /*body is a grid container*/
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+  gap: 1px;
+}
+
+header{
+  grid-column: 1;
+  grid-row: 1;
+  margin-bottom: 150px;
+}
+
+.jour{
+  background-color: aliceblue;
+  color:#000;
+  }
+
+/*** START NAVBAR***/
+.navi{
+  position: absolute;
+  padding: 20px;
+  display:flex;
+  justify-content: space-between;
+  width:100%;
+  box-sizing:border-box;
+  align-items: center;
+  background-color: #303030;
+  box-shadow: 0px 2px 20px 1px #000;
+}
+.menu-lien{
+  list-style-type: none;
+}
+.navi img{ /*LOGO IMAGE */
+  padding:0;
+  width: 77px;
+  height: 100px;
+}
+.logo-img{
+  margin-left: -100px;
+}
+
+.navi a {
+  color:white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.navi a:hover{
+  color:darkorange;
+  box-shadow: 8px 8px darkorange;
+  transition: all 0.5s ease;
+}
+
+.navi .logo{
+  display: flex;
+  flex-direction: row;
+  font-size: 1.8em;
+  font-weight: bolder;
+  color: white;
+  margin-left: 100px;
+}
+
+.navi .menu-lien ul{
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+.navi .menu-lien ul li{
+  margin: 10px 25px;
+}
+.navi .menu-lien ul li.active a{
+color: red;
+font-weight: 400;
+}
+
+.navi .bouton-menu{
+  display: none;
+  position: absolute;
+  color:white;
+  right: 20px;
+  top: 50px;
+}
+
+
+/**** E N D   N A V B A R****/
+
+/* ELEMENT INTO THE MAIN'S GRID*/
+
+main{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-auto-rows: auto;
+  gap: 10px;
+  grid-row: 2;
+  margin:auto 50px; 
+  line-height: 1.6;
+  }
+  .titre-principal{
+    grid-column: 1/5;
+    grid-row: 1;
+    background-image: linear-gradient(90deg, rgba(2,0,36,0.71) 0%, rgba(9,9,121,0.51) 35%, rgba(0,212,255,0.51) 100%),
+     url(../img/gendarme.jpeg);
+    color: #efefef;
+    z-index: 2;
+  }
+  
+  .titre-principal h1{
+    font-family: 'Poppins', serif;
+    font-weight: bold;
+    font-size: 4.5em;
+    display: block;
+    backdrop-filter: blur(10px);
+    margin-left: 10px;
+  }
+  .titre-rec{
+    grid-column: 1/3;
+    grid-row: 2/3;
+    border-radius: 10px;
+  }
+  .titre-rec h1{
+    font-size: 2.5em;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.3;
+    margin-bottom: 25px;
+  }
+  .titre-rec h2{
+    margin-bottom: 12px;
+  }
+  .disc {
+    list-style-type: disc;
+  }
+  .lien-rec{
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
+  .lien-rec nav{
+    display: block;
+    /*border: 2px solid darkblue;*/
+    font-size: 1.5em;
+    color: #bb86fc;
+    background-color: #1f1b24;
+    list-style-type: none;
+  }
+  
+  .lien-rec nav li{
+    margin: 5px auto;
+    padding: 0.5em;
+  }
+  .lien-rec nav li:hover{
+    background-color: aqua;
+  }
+  .lien-rec nav li a{
+    padding:0.2em;
+    width:100%;
+  }
+  .lien-rec nav hr{
+    border-color: darkblue;
+  }
+  
+  .titre-deco{
+    grid-column: 3/5;
+    grid-row: 2/4;
+    border-left: 5px dashed gray;
+    padding: 1em;
+  }
+  .titre-deco img{
+    float: left;
+    margin-bottom: 20px;
+    object-fit: cover;
+  }
+  .titre-deco h1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 2.5em;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.3;
+  }
+  .article-rec{
+    grid-column: 1/3;
+    grid-row: 4/6;
+    display: flex;
+  }
+  .article-rec article{
+    display: none;
+  }
+  .article-rec .affiche{
+    display: block;
+  }
+  #cond-rec h1{
+   font-size: 2em;
+  }
+  #cond-rec h2{
+    border: 1px solid red;
+    padding: 10px;
+    margin: 10px;
+    background-color:#46444a;
+  }
+  #etapes h1{
+    font-size: 2em;
+   }
+   #etapes h2{
+    border: 1px solid red;
+    padding: 10px;
+    margin: 10px;
+    background-color:#46444a;
+   }
+   #info h1{
+    font-size: 2em;
+   }
+   #info h2{
+    padding: 0px;
+    margin: 30px 15px 0px 0px;
+    font-size: 1.6em;
+   }
+
+  /*.condit-rec h2{
+    font-size: 1.8em;
+    text-align: center;
+  }*/
+  .lien-deco{
+    grid-column: 3/5;
+    grid-row: 4/5;
+    border-left: 5px dashed gray;
+    padding: 1em;
+  }
+  .slider{
+    position:relative;
+    height: 70vh;
+  }
+  .slider img{
+    object-fit: cover ;
+    height: 100%;
+    width:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    opacity: 0;
+    transition: opacity .5s;
+  }
+  .slider img.active{
+    opacity: 1;
+  }
+  .suivant,.precedent{
+    color: rgb(120,120,129,0.30);
+    font-size: 3rem;
+    position: absolute;
+    top: 120%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  .suivant{
+    right: 80px;
+  }
+  .precedent{
+    left: 720px;
+  }
+
+  .article-deco{
+    grid-column: 3/5;
+    grid-row: 5/6;
+    border-left: 5px dashed gray;
+    padding: 1em;
+    display: flex;
+  }
+  
+
+  /*FOOTER TURN NOW*/
+.foot{
+  grid-column: 1/5;
+  grid-row: 6;
+  background-color: black;
+}
+.foot > p{
+  font: bold 6em 'Verdana',sans-serif;
+  text-align: center;
+}
+footer{grid-row:3;}
+/*END OF FOOTER'S STYLE*/
+
+/*** RESPONSIVE ***/
+
+@media screen and (max-width:800px){
+  .navi{
+    padding: 0;
+    height: 20%;
+  }
+  .navi .logo{
+    position: absolute;
+    top: 7px;
+    left: 30px;
+   }
+  .navi .bouton-menu{
+    display: block;
+    
+  }
+ .menu-lien{
+  top:0;
+  left:0;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(255,255,255,0.30);
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -100%;
+  transition: all 0.5s ease;
+ }
+ .mobile-menu{
+  margin-left: 0;
+}
+ .menu-lien ul{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+ } 
+ .navi .menu-lien ul li{
+  margin: 25px 0;
+  font-size: 1.5em;
+}
+}

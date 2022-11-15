@@ -1,0 +1,336 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Poppins',sans-serif;
+  color: whitesmoke;
+  font-weight: bold;
+  background-color: #121212;
+  width: 100%;
+  height:100vh;
+  box-sizing: border-box;
+  display: grid; /*body is a grid container*/
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+  gap: 1px;
+}
+
+header{
+  grid-column: 1;
+  grid-row: 1;
+  margin-bottom: 150px;
+}
+.jour{
+background-color: aliceblue;
+color:#000;
+}
+
+
+
+/*** START NAVBAR***/
+.navi{
+  position: absolute;
+  padding: 20px;
+  display:flex;
+  justify-content: space-between;
+  width:100%;
+  box-sizing:border-box;
+  align-items: center;
+  background-color: #303030;
+  box-shadow: 0px 2px 20px 1px #000;
+}
+
+.navi img{ /*LOGO IMAGE */
+  padding:0;
+  width: 77px;
+  height: 100px;
+}
+.logo-img{
+  margin-left: -100px;
+}
+
+.navi a {
+  color:white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.navi a:hover{
+  color:darkorange;
+  box-shadow: 8px 8px darkorange;
+  transition: all 0.5s ease;
+}
+
+.navi .logo{
+  display: flex;
+  flex-direction: row;
+  font-size: 1.8em;
+  font-weight: bolder;
+  color: white;
+  margin-left: 100px;
+}
+
+.navi .menu-lien ul{
+  display: flex;
+  align-items: center;
+
+}
+
+.navi .menu-lien ul li{
+  margin: 10px 25px;
+}
+.navi .menu-lien ul li.active a{
+color: red;
+font-weight: 400;
+}
+
+.navi .bouton-menu{
+  display: none;
+  position: absolute;
+  color:white;
+  right: 20px;
+  top: 50px;
+}
+
+/**** E N D   N A V B A R****/
+
+
+/* ELEMENT INTO THE MAIN'S GRID*/
+
+main{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-auto-rows: auto;
+  gap: 10px;
+  grid-row: 2;
+  margin:auto 100px; 
+  line-height: 1.6;
+  }
+
+.en-tete{
+  grid-column: 1/4;
+  grid-row: 1;
+  background-image: url(../img/gend-place-arme.jpg);
+  background-size: cover;
+  display:block;
+  margin: 10px auto;
+  width:100%;
+  height:18em;
+}
+.en-tete h1{
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 4.5em;
+  display: block;
+  margin: 0.5em 2em auto;
+  color: whitesmoke;
+}
+.first-article{
+  grid-column: 1/4;
+  grid-row: 2/3;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #909090;
+  text-align: center;
+}
+.second-article{
+  grid-column: 1/4;
+  grid-row: 3/4;
+  margin: 10px 20px;
+}
+.info{
+  grid-column: 1/3;
+  grid-row: 4/5;
+  border-top: 2px solid gray;
+}
+.info h2{
+  margin-left: 15px;
+}
+aside{
+  grid-column: 3/4;
+  grid-row: 4/5;
+  background-color: #ffcf39;
+  color:#0a0a23;
+  text-align: center;
+}
+aside>h1{
+  margin: 0 auto;
+  font-size: 2.2em;
+  font: bold 2em 'Georgia',serif;
+}
+/* FORM STYLE*/
+form{
+  width: 80%;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  color:#000;
+}
+fieldset{
+  border: none;
+  padding: 2rem 0;
+}
+label{
+  display: block;
+  margin: 0.5rem 0;
+  text-align: left;
+}
+input{
+  background-color: #0a0a23;
+  border: 1px splid #0a0a23;
+  color: #fff;
+  height: 2.3em;
+  width: 100%;
+}
+input[type="submit"]{
+  display: block;
+  margin: 2em auto;
+  width:55%;
+}
+/**** FORM END STYLE ****/
+
+.first-article h1{
+  font: bold 2.5em 'Tahoma',sans-serif;
+  margin:15px,0,15px,0;
+}
+.first-article p{
+  font-size: 1.5em;
+  text-align: justify;
+}
+.first-article img{
+  float: left;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+.second-article h1{
+  font: bold 2.3em 'Tahoma',sans-serif;
+}
+.second-article img{
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+.third-article h1{
+  font: bold 2em 'Tahoma',sans-serif;
+  margin:5px,0,15px,0;
+}
+.first-article,.second-article,.third-article{
+  margin: 0 10px;
+  padding-left: 2px;
+}
+.info{
+  border-left: 5px solid gray;
+}
+.info img{
+  float: left;
+}
+.info>h2{
+  font: 2em 'Tahoma',sans-serif;
+  margin:5px auto;
+  margin-left: 1.5em;
+}
+.art-img-1{
+  display: block;
+  margin-top: 2px;
+  margin-left: 2px;
+  box-shadow:0px 0px 20px 10px #000;
+}
+/*MAIN'S STYLE END*/
+
+/*FOOTER TURN NOW*/
+.foot{
+  grid-column: 1/4;
+  grid-row: 4;
+  background-color: black;
+}
+.foot > p{
+  font: bold 6em 'Verdana',sans-serif;
+  text-align: center;
+}
+.foot address{
+  text-align: center;
+}
+footer{grid-row:3;}
+/*END OF FOOTER'S STYLE*/
+
+
+
+/*** RESPONSIVE ***/
+
+@media only screen and (max-width:900px){
+  .navi{
+    padding: 0;
+    height: 20%;
+    width:100%;
+  }
+  .navi a:hover{
+    color:darkorange;
+  }
+ .navi .logo{ /* THE LOGO IN SMALLER SCREEN*/
+  position: absolute;
+  top: 7px;
+  left: 30px;
+  font-size: 1em;
+ }
+  .navi .bouton-menu{
+    display: block;
+  }
+
+ .menu-lien{
+  top:0;
+  left:0;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(255,255,255,0.30);
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -100%;
+  transition: all 0.5s ease;
+ }
+ .mobile-menu{
+  margin-left: 0;
+}
+ .menu-lien ul{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+ } 
+ .navi .menu-lien ul li{
+  margin: 25px 0;
+  font-size: 1.5em;
+}
+.en-tete h1{
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 2.3em;
+  display: block;
+  margin: 2.3em auto;
+}
+.second-article h1{
+  font: bold 2em 'Tahoma',sans-serif;
+}
+}
+@media screen and (max-width:1250px){
+  .navi a:hover{
+    color:darkorange;
+  }
+  .en-tete h1{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 3em;
+    display: block;
+    margin: 1.5em auto;
+  }
+}
+/******* E N D   R E S P O N S I V E *******/
