@@ -42,22 +42,35 @@ window.onload = function(){
   
   /* display articles when user clicks on a link*/
  
-  let choixArticle = document.getElementsByClassName('partie') // array of articles
+  let choixArticle = document.getElementsByClassName('partie') // array of articles//
+  let choixArtDeco = document.getElementsByClassName('choix') //                  //
   let nbre_article = choixArticle.length;
+  let nbre_articleDeco = choixArtDeco.length;
   let choixLien = document.getElementsByClassName('alire') // array of links
+  let choixLienDeco = document.getElementsByClassName('ArtDeco')
  
   function enleverAffichage(){ // this function remove the '.partie' class from an article ||
     for(let i = 0; i < nbre_article; i++){    //                                           ||
       choixArticle[i].classList.remove('affiche');  //                              <<<====
     }
   }
-  
+  function enleverAfficheur(){
+    for(let i = 0; i < nbre_articleDeco; i++){
+      choixArtDeco[i].classList.remove('afficheur');
+    }
+  }
 
  for(let i = 0; i < choixLien.length; i++){
     choixLien[i].addEventListener('click', () => {
       enleverAffichage();
       choixArticle[i].classList.add('affiche');  // this add the class affiche to the article choosed
     });
+ }
+ for(let i = 0; i < choixLienDeco.length; i++){
+  choixLienDeco[i].addEventListener('click',()=> {
+    enleverAfficheur();
+    choixArtDeco[i].classList.add('afficheur');
+  });
  } 
  
 

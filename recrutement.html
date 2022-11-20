@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="MDL Jacquel Penah">
   <title>Recrutement-Gendarmerie | Bureau Rec-Chan</title>
+   <link rel="icon" type="image/x-icon" href="/favicon.ico">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
@@ -18,30 +19,32 @@
    <script src="https://kit.fontawesome.com/6c15a318d4.js" crossorigin="anonymous"></script>
    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.2/p5.js"></script>-->
   <!-- <script src="../addons/p5.sound.js"></script> -->
- 
 </head>
                       <!--S T A R T  B O D Y-->
 
   <body id="theme">
     <header>
-  <nav class="navi">
-    <div class="logo">
-      <img src="../img/logo.png" class="logo-img"><a href="accueil.html">  BUREAU <br> RECRUTEMENT <br> CHANCELLERIE</a>
-  </div>
-    <div class="menu-lien">
-      <ul>
-        <li><a href="accueil.html">ACCUEIL</a></li>
-        <li class="active"><a href="#"> SECTION RECRUTEMENT </a></li>
-        <li><a href="chan.html"> SECTION CHANCELLERIE </a></li>
-        <li><a href="accident.html"> SECTION ACCIDENT </a></li>
-        <li><a href="#" id="bouton"><span class="material-symbols-outlined">
-          brightness_6
-          </span></a></li>
-      </ul>
-    </div>
-    <span class="bouton-menu"><i class="fa fa-bars fa-2x" style="color:white;"></i></span>
-  </nav>
-  </header>
+      <nav class="navi">
+        <div class="logo">
+        <img src="../img/logo.png" class="logo-img"><a href="accueil.html">  BUREAU <br> RECRUTEMENT <br> CHANCELLERIE</a>
+        </div>
+        <div class="menu-lien">
+          <ul>
+            <li><a href="accueil.html">ACCUEIL</a></li>
+            <li class="active"><a href="#"> SECTION RECRUTEMENT </a></li>
+            <li><a href="chan.html"> SECTION CHANCELLERIE </a></li>
+            <li><a href="accident.html"> SECTION ACCIDENT </a></li>
+            <li id="bouton"><span class="material-symbols-outlined">
+              toggle_on
+              </span></li>
+            <li><a href="#" id="bouton2"><span class="material-symbols-outlined">
+              toggle_off
+              </span></a></li>
+          </ul>
+        </div>
+          <span class="bouton-menu"><i class="fa fa-bars fa-2x" style="color:white;"></i></span>
+      </nav>
+    </header>
 <main>
   <div class="titre-principal">
     <h1>
@@ -88,7 +91,13 @@
       <li class="alire"><a href="#info">Qui sommes-nous?</a></li>
     </nav>
   </div>
-  <div class="lien-deco"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede.</div>
+  <div class="lien-deco"> 
+    <!--AJOUTER TITRE ET LIEN VERS ARTICLES DE LA DECORATION-->
+    <nav>
+      <li class="ArtDeco"><a href="#primeDeco">Découvrez les médailles</a></li><hr> <!--ARTICLE SUR MEDAILLES-->
+      <li class="ArtDeco"><a href="#secDeco">Conditions de décoration</a></li> <!--CONDITIONS DE DECORATIONS-->
+    </nav>
+  </div>
   
   <section class="article-rec">
     <article class="partie affiche" id="cond-rec">
@@ -175,8 +184,60 @@ Sa devise est PRO PATRIA - PRO LEGE qui signifie "POUR LA PATRIE POUR LA LOI"</s
     </article>
 </section>
 <section class="article-deco">
-  <article class="medaille"></article>
-  <article class="cond-deco"></article>
+  <article class="choix afficheur" id="primeDeco">
+    <!--ARTICLE SUR LA PRESENTATION DES DIFFERENTES MEDAILLES /// A relier avec liens en haut dans lien-deco -->
+    <h1>Découvrez les médailles qui ornent les tenues des gendarmes</h1>
+      <p>Les médailles qu'arborent sur leurs tenues les militaires de la Gendarmerie sont essentiellement de deux types : <br> On distingue <span style="color: #f69d3c" class="underlined">les médailles des Ordres nationaux</span> et <span style="color: #f69d3c" class="underlined">les médailles militaires</span>. <br> Les ordres nationaux sont composés de <em>l'ordre national</em> et de <em>l'ordre du mérite ivoirien</em>. Attention à ne pas faire l'amalgame. Les médailles militaires comprennent la Médaille des Forces Armées, la Médaille de Sauvetage et la médaille de la Gendarmerie.</p>
+        <h2>Les Ordres Nationaux </h2>
+          <div class="divider"></div>
+  
+                <h3><span style="color: #f69d3c" class="underlined">L'Ordre National</span></h3>
+                  <p>
+                    <!--COMMENTAIRES SUR L'ORDRE NATIONAL-->
+                    L'Ordre National est la distinction la plus honorifique de l'Etat. Il est destiné à récompenser le mérite personnel et les services rendus à la Nation. Il se décline en trois (03) grades: <i><b>Chevalier, Officier, Commandeur</b></i> et deux (02) dignités:<i>Grand-officier</i> et <i>Grand-croix</i>.
+                    <figure>
+                      <img src="../img/medal/chon.jpeg" alt="Medaille de Chevalier de l'Ordre National" class="exempleImg"/>
+                      <figcaption><cite>Chevalier de l'Ordre National</cite></figcaption>
+                    </figure>
+                  </p>
+                <h3><span style="color: #f69d3c" class="underlined">L'Ordre du Mérite Ivoirien</span></h3>
+                  <p>
+                    <!--COMMENTAIRES SUR L'ORDRE DU MERITE IVOIRIEN-->
+                    Il est destiné à récompenser les mérites distingués acquis dans un secteur d'activité donné soit dans une fonction publique, civile ou militaire, soit dans l'exercice d'une activité privée.
+                    <figure>
+                      <img src="../img/medal/chomi.jpeg" alt="Medaille de Chevalier de l'Ordre du Merite Ivoirien" class="exempleImg"/>
+                      <figcaption><cite>Commandeur de l'Ordre du Merite Ivoirien</cite></figcaption>
+                    </figure>
+                  </p>
+        <h2>Les Médailles Militaires</h2>
+          <div class="divider"></div>
+          <h3><span style="color: #f69d3c" class="underlined">La Médaille des Forces Armées</span></h3>
+              <p>Elle est attribuée aux gendarmes ayant servi pendant une durée minimum de 13(treize) années sous les couleurs de la nation sans avoir encouru de sanctions disciplinaires; elle permet de recompenser donc des gendarmes exemplaires, à encourager. En dehors de cela cette médaille est concédée sans condition à ceux qui: <ul><li>ont reçu une ou plusieurs blessures de guerre ou en cours d'opérations de maintien de l'ordre,<li>se sont signalés par un acte exceptionnel de courage et de dévouement.</li></ul> 
+                <figure>
+                  <img src="../img/medal/mfa.jpeg" alt="Medaille des Forces Armées" class="exempleImg"/>
+                  <figcaption><cite>Medaille des Forces Armées</cite></figcaption>
+                </figure>
+              </p>
+              
+          <h3><span style="color: #f69d3c" class="underlined">La Médaille de Sauvetage</span></h3>
+              <p>
+                Cette médaille est accordée à titre exceptionnel à tout personnel, qui se serait signalé par un acte particulier de courage et de dévouement constaté.<br> Elle se décline en trois échelon: Bronze, Argent et Or.
+                <figure>
+                  <img src="../img/medal/or.jpeg" alt="Medaille de Sauvetage Or" class="exempleImg"/>
+                  <figcaption><cite>Medaille de Sauvetage échelon Or</cite></figcaption>
+                </figure>
+              </p>
+
+          <h3><span style="color: #f69d3c" class="underlined">La Médaille de la Gendarmerie</span></h3>
+
+    </article>
+  <article class="choix" id="secDeco">
+    <!--ARTICLE SUR CONDITIONS DE DECORATIONS-->
+    <h1>Conditions à remplir pour recevoir une décoration</h1>
+      <h2>Conditions Générales</h2>
+        <div class="divider"></div>
+    <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede.</p>
+  </article>
 </section>
 </main>
   <footer class="foot">
