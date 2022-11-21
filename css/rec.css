@@ -162,7 +162,6 @@ main{
   }
   .lien-rec nav{
     display: block;
-    /*border: 2px solid darkblue;*/
     font-size: 1.5em;
     color: #bb86fc;
     background-color: #1f1b24;
@@ -204,6 +203,9 @@ main{
     font-size: 2.5em;
     font-family: 'Poppins', sans-serif;
     line-height: 1.3;
+  }
+  .titre-deco ol li{
+    margin-left: 25px;
   }
   .lien-deco nav{
     display: block;
