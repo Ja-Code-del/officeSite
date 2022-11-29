@@ -25,6 +25,27 @@ header{
   grid-row: 1;
   margin-bottom: 150px;
 }
+
+.container{
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+}
+.envBouton{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  background-color: #303030;
+  color:#efefef;
+  font-family: 'Poppins', sans-serif;
+}
+.changeTheme{
+  border: 1px dash white;
+}
 .jour{
 background-color: aliceblue;
 color:#000;
@@ -94,6 +115,50 @@ font-weight: 400;
   color:white;
   right: 20px;
   top: 50px;
+}
+
+button{
+  vertical-align: baseline;
+  border: none;
+}
+
+.submenu{
+  display: block;
+  height: 100px;
+  left: 91%;
+  position: absolute;
+  top: 80px;
+  width: 120px;
+  list-style-type: none;
+  margin: 0;
+  z-index: 9999;
+  border-radius: 5px;
+}
+.submenu button{
+  margin: 5px auto;
+  width: 100%;
+  background-color: #1f1b24;
+  color: wheat;
+  border: 1px solid black;
+}
+.submenu .themeButton{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.changeTheme{
+  display: none;
+}
+.changeTheme ul{
+  background-color: rgba(56,56,56,0.8);
+  border:1px solid white;
+  box-shadow: 0 0 1em #f1f1f1;
+  padding:5px;
+}
+.changeTheme ul li{
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /**** E N D   N A V B A R****/

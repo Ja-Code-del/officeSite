@@ -24,6 +24,16 @@ header{
   margin-bottom: 150px;
 }
 
+
+
+
+
+.jour{
+  background-color: aliceblue;
+  color:#000;
+  }
+
+/*** START NAVBAR***/
 .container{
   display: flex;
   align-items: center;
@@ -32,25 +42,7 @@ header{
   margin-right: auto;
   margin-top: 60px;
 }
-.envBouton{
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  flex-direction: row-reverse;
-  background-color: #303030;
-  color:#efefef;
-  font-family: 'Poppins', sans-serif;
-}
-.changeTheme{
-  border: 1px dash white;
-}
 
-.jour{
-  background-color: aliceblue;
-  color:#000;
-  }
-
-/*** START NAVBAR***/
 .navi{
   position: absolute;
   padding: 20px;
@@ -64,6 +56,22 @@ header{
 }
 .menu-lien{
   list-style-type: none;
+}
+.envBouton{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  background-color: #303030;
+  color:#efefef;
+  font-family: 'Poppins', sans-serif;
+}
+.submenu button:hover{
+  background-color: #5f6368;
+  border-color: #f0b92d;
+}
+.changeTheme{
+  border: 1px dash white;
 }
 .navi img{ /*LOGO IMAGE */
   padding:0;
@@ -151,17 +159,42 @@ button{
   align-items: center;
   justify-content: center;
 }
-
+.changeTheme{
+  display: none;
+}
 .changeTheme ul{
-  background-color: rgba(56,56,56,0.8);
+  background-color: rgba(56,56,56,0.5);
   border:1px solid white;
-  box-shadow: 0 0 1em #f1f1f1;
+  box-shadow: 0 0 0.1em #f1f1f1;
   padding:5px;
 }
 .changeTheme ul li{
   margin-left: auto;
   margin-right: auto;
 }
+/* For the Js script*/
+.setDark{
+  background-color: #121212;
+  color: white;
+  }
+  
+.setLight{
+  background-color: white;
+  color: black;
+  }
+.sousDark{
+    background-color: #44464a;
+  }
+    
+    .sousLight{
+    background-color: antiquewhite;
+  }
+    .underlineDark{
+    color:#f69d3c;
+  }
+    .underlineLight{
+    color:teal;
+    }
 
 
 

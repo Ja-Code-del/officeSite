@@ -24,25 +24,39 @@
                       <!--S T A R T  B O D Y-->
 
   <body id="theme">
+
+                      <!--THE HAEADER-->
+  
     <header>
-  <nav class="navi">
-    <div class="logo">
-      <img src="../img/logo.png" class="logo-img"><a href="#">BUREAU<br> RECRUTEMENT <br> CHANCELLERIE</a>
-    </div>
-    <div class="menu-lien"><!--HERE IS MENU-LIEN-->
-      <ul>
-        <li class="active"><a href="#">ACCUEIL</a></li>
-        <li><a href="recrutement.html"> SECTION RECRUTEMENT </a></li>
-        <li><a href="chan.html"> SECTION CHANCELLERIE </a></li>
-        <li><a href="accident.html"> SECTION ACCIDENT </a></li>
-        <li><a href="#" id="bouton"><span class="material-symbols-outlined">
-          contrast
-          </span></a></li>
-      </ul>
-    </div>
-    <span class="bouton-menu"><i class="fa fa-bars fa-2x" style="color:white;"></i></span><!--THIS IS BOUTON-MENU-->
-  </nav>
-  </header>
+      <div class="container">
+        <nav class="navi">
+          <div class="logo">
+            <img src="../img/logo.png" class="logo-img" alt="Le logo de la Gendarmerie Nationale"><a href="accueil.html">  BUREAU <br> RECRUTEMENT <br> CHANCELLERIE</a>
+          </div>
+          <div class="menu-lien">
+            <ul>
+              <li class="active"><a href="#">ACCUEIL</a></li>
+              <li><a href="recrutement.html"> SECTION RECRUTEMENT </a></li>
+              <li><a href="chan.html"> SECTION CHANCELLERIE </a></li>
+              <li><a href="accident.html"> SECTION ACCIDENT </a></li>
+            </ul>
+          </div> 
+          <div><button class="pop" type="button"><span style="margin:0px;" class="envBouton"><span class="material-symbols-outlined">
+                  contrast
+            </span>Theme</span></button>
+            
+          </div>
+            <span class="bouton-menu"><i class="fa fa-bars fa-2x" style="color:white;"></i></span>
+        </nav> 
+      </div>
+      <div class="changeTheme">
+        <ul class="submenu">
+          <li><button id = "light_button" type="button"><span class="themeButton"><span class="material-symbols-outlined">light_mode</span>Clair</span></button></li>
+          <li><button id = "dark_button" type="button"><span class="themeButton"><span class="material-symbols-outlined">dark_mode</span>Sombre</span></button></li>
+        </ul>
+      </div>
+    </header>
+
   
               <!--T H E   M A I N  N O W-->
 

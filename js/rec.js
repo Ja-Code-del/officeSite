@@ -9,36 +9,46 @@ window.onload = function(){
 
 
 /*this is to change the page mode dark or light*/
-  let mode = document.getElementById('bouton')
-  let change = document.getElementById('theme')
-  let footColor = document.getElementsByTagName('footer')
-  let sousTitre = document.getElementsByClassName('modeSoustitre')
-  let underline = document.getElementsByClassName('underlined')
-  let test = true
-  mode.addEventListener('click', () => {
-      if(test){
+ let modeLight = document.querySelector('#light_button')
+ let modeDark = document.querySelector('#dark_button')
+ let test = true
+ let change = document.getElementById('theme')
+ let footColor = document.getElementsByTagName('footer')
+
+  modeLight.addEventListener('click', ()=>{
+    if(test){
       change.style.backgroundColor ='white'
       change.style.color = 'black'
-      for(let i=0; i<sousTitre.length;i++){
-      sousTitre[i].style.backgroundColor='antiquewhite';
-      }
-      for(let j = 0; j < underline.length; j++){
-        underline[j].style.color = 'teal'
-      }
       footColor[0].style.color = 'white'
       test = false
-  } else {
-      change.style.backgroundColor = '#121212'
-      change.style.color = 'white'
-      for(let i=0; i<sousTitre.length;i++){
-        sousTitre[i].style.backgroundColor='#44464a';
-        }
-        for(let j = 0; j < underline.length; j++){
-          underline[j].style.color = '#f69d3c'
-        }
-      test= true
-  }
+    }
   });
+
+  modeDark.addEventListener('click', ()=>{
+    if(test==false){
+      change.style.backgroundColor = '#333'
+      change.style.color = 'whitesmoke'
+      test= true
+    }
+  })
+
+//display or hide the pop up
+let themeSetter = document.querySelector('.changeTheme')
+let popUp = document.querySelector('.pop') // add id="pop" at "bouton" place
+let pop_up_hidden = true;// popup is hidden
+popUp.addEventListener('click',() => {
+  if(pop_up_hidden){
+ themeSetter.style.display = 'block';
+ pop_up_hidden = !pop_up_hidden;
+  }
+  else{
+    themeSetter.style.display = 'none';
+    pop_up_hidden = !pop_up_hidden;
+  }
+});
+
+  
+  
   
   /* display articles when user clicks on a link*/
  
