@@ -11,6 +11,7 @@ window.onload = function(){
 /*this is to change the page mode dark or light*/
  let modeLight = document.querySelector('#light_button')
  let modeDark = document.querySelector('#dark_button')
+ let title = document.getElementsByClassName('modeSoustitre')
  let test = true
  let change = document.getElementById('theme')
  let footColor = document.getElementsByTagName('footer')
@@ -20,6 +21,9 @@ window.onload = function(){
       change.style.backgroundColor ='white'
       change.style.color = 'black'
       footColor[0].style.color = 'white'
+      for(let i = 0; i < title.length; i++){
+        title[i].style.backgroundColor = 'antiquewhite'
+      }
       test = false
     }
   });
@@ -28,6 +32,9 @@ window.onload = function(){
     if(test==false){
       change.style.backgroundColor = '#333'
       change.style.color = 'whitesmoke'
+      for(let i = 0; i < title.length; i++){
+        title[i].style.backgroundColor = '#46444a'
+      }
       test= true
     }
   })
