@@ -2,10 +2,16 @@
 window.onload = function(){
   /*This is for the responsive*/
   let menu = document.querySelector(".bouton-menu")
+  let close = document.querySelector(".bouton-menu-close")
   let lienMenu = document.querySelector(".menu-lien")
   menu.addEventListener('click', () => {
+     // lienMenu.classList.remove('hideMenu')
       lienMenu.classList.toggle('mobile-menu')
   }); 
+  close.addEventListener('click',()=>{
+    lienMenu.classList.remove('mobile-menu')
+   // lienMenu.classList.toggle('hideMenu')
+  })
 
 
 /*this is to change the page mode dark or light*/
