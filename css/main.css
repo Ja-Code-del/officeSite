@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -316,14 +317,28 @@ input[type="submit"]{
   grid-row: 4;
   background-color: black;
 }
-.foot > p{
-  font: bold 6em 'Verdana',sans-serif;
-  text-align: center;
-}
-.foot address{
-  text-align: center;
-}
-footer{grid-row:3;}
+  .foot p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    color:#5f6368;
+    text-align: center;
+  }
+  footer{
+    display: flex;
+    flex-direction: column;
+    flex-grow: initial;
+    grid-row:3;
+    text-align:center;
+    margin-top: 2em;
+  }
+  .logo-img2{
+    margin:0 auto;
+  }
+  .foot a:hover{
+    color:#bababa;
+  }
+
 /*END OF FOOTER'S STYLE*/
 
 

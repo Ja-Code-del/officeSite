@@ -5,12 +5,11 @@ window.onload = function(){
   let close = document.querySelector(".bouton-menu-close")
   let lienMenu = document.querySelector(".menu-lien")
   menu.addEventListener('click', () => {
-     // lienMenu.classList.remove('hideMenu')
       lienMenu.classList.toggle('mobile-menu')
   }); 
   close.addEventListener('click',()=>{
     lienMenu.classList.remove('mobile-menu')
-   // lienMenu.classList.toggle('hideMenu')
+    themeSetter.style.display = 'none'
   })
 
 
@@ -18,6 +17,7 @@ window.onload = function(){
  let modeLight = document.querySelector('#light_button')
  let modeDark = document.querySelector('#dark_button')
  let title = document.getElementsByClassName('modeSoustitre')
+ let important = document.getElementsByClassName('underlined')
  let test = true
  let change = document.getElementById('theme')
  let footColor = document.getElementsByTagName('footer')
@@ -30,6 +30,9 @@ window.onload = function(){
       for(let i = 0; i < title.length; i++){
         title[i].style.backgroundColor = 'antiquewhite'
       }
+      for(let i = 0; i < important.length; i++){
+        important[i].style.color = 'teal'
+      }
       test = false
     }
   });
@@ -40,6 +43,9 @@ window.onload = function(){
       change.style.color = 'whitesmoke'
       for(let i = 0; i < title.length; i++){
         title[i].style.backgroundColor = '#46444a'
+      }
+      for(let i = 0; i < important.length; i++){
+        important[i].style.color = '#f69d3c"'
       }
       test= true
     }
@@ -59,11 +65,7 @@ popUp.addEventListener('click',() => {
     pop_up_hidden = !pop_up_hidden;
   }
 });
-
-  
-  
-  
-  /* display articles when user clicks on a link*/
+/* display articles when user clicks on a link*/
  
   let choixArticle = document.getElementsByClassName('partie') // array of articles//
   let choixArtDeco = document.getElementsByClassName('choix') //                  //
@@ -96,7 +98,6 @@ popUp.addEventListener('click',() => {
   });
  } 
  
-
 /* THE SLIDER*/
 
  let img_slider = document.getElementsByClassName('img__slider')
